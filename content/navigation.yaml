@@ -1,0 +1,55 @@
+groups:
+  - label: Registration
+    href: /registration
+    items: []
+  - label: Home
+    href: /
+    items: []
+  - label: Media
+    href: /media
+    items: []
+  - label: About
+    href: /about
+    items:
+      - label: Q&A
+        href: /qa
+      - label: Twitter
+        href: /twitter
+      - label: Schools
+        href: /shipping
+      - label: 2017/18 schools
+        href: /2017-18-schools
+      - label: Timeline
+        href: /timeline
+      - label: Contact
+        href: /contact-2
+      - label: Thanks
+        href: /thanks
+  - label: Challenge
+    href: https://codemyrobotchallenge.com/
+    items:
+      - label: Rules
+        href: /rules
+      - label: Maze Challenge
+        href: /maze-challenge
+      - label: Awards
+        href: /awards
+      - label: Downloads
+        href: /downloads
+  - label: Info
+    href: /info
+    items:
+      - label: Free
+        href: /free-2
+      - label: Prizes
+        href: /prizes
+      - label: Game
+        href: /game
+  - label: Buy
+    href: /buy
+    items: []
+  - label: Tutorials
+    href: /tutorials
+    items:
+      - label: Manual
+        href: /manual
