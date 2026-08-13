@@ -1,5 +1,6 @@
 import { SiteHeader } from '@/components/SiteHeader'
 import { SiteFooter } from '@/components/SiteFooter'
+import { SponsorBanner } from '@/components/SponsorBanner'
 import { getNavigation, getSettings } from '@/lib/reader'
 
 export default async function SiteLayout({ children }: { children: React.ReactNode }) {
@@ -14,6 +15,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
 
   return (
     <div className="flex min-h-screen flex-col">
+      <SponsorBanner />
       <SiteHeader siteTitle={siteTitle} groups={groups} />
       <div className="flex-1">{children}</div>
       <SiteFooter
