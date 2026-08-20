@@ -1,0 +1,3 @@
+# .mdoc is Markdoc (Keystatic content), not roff/mdoc man-page macros.
+# Without this GitHub labels the whole repo "Roff".
+*.mdoc linguist-language=Markdown

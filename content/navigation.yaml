@@ -1,7 +1,4 @@
 groups:
-  - label: Registration
-    href: /registration
-    items: []
   - label: Home
     href: /
     items: []
@@ -26,7 +23,7 @@ groups:
       - label: Thanks
         href: /thanks
   - label: Challenge
-    href: https://codemyrobotchallenge.com/
+    href: ''
     items:
       - label: Rules
         href: /rules
@@ -45,9 +42,6 @@ groups:
         href: /prizes
       - label: Game
         href: /game
-  - label: Buy
-    href: /buy
-    items: []
   - label: Tutorials
     href: /tutorials
     items:

@@ -63,11 +63,6 @@ export default config({
           description: 'Draft pages are hidden from the live site.',
           defaultValue: false,
         }),
-        showRegistrationForm: fields.checkbox({
-          label: 'Show the school registration form',
-          description: 'Adds the School Name / teacher / email registration form below the page text.',
-          defaultValue: false,
-        }),
         carousel: fields.array(
           fields.object({
             image: fields.image({

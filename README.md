@@ -70,25 +70,6 @@ to commit through the GitHub API.
 Publishing then works like this: client edits at `codemyrobot.ca/keystatic` → Keystatic
 commits → Vercel rebuilds → live in roughly 30–60 seconds.
 
-## The registration form
-
-`/library-registration` carries the school registration form that was a Gravity Forms embed on
-the old site. Any page can show it by ticking **Show the school registration form** in the
-editor.
-
-Submissions POST to `/api/registration`, which emails them on via Resend's HTTP API. Until
-these three variables are set the form returns a clear "not set up yet" message and tells
-people to email instead — it never silently drops a submission:
-
-```
-RESEND_API_KEY=...
-REGISTRATION_TO_EMAIL=codemyrobot@gmail.com
-REGISTRATION_FROM_EMAIL=registrations@codemyrobot.ca
-```
-
-Resend's free tier covers this comfortably. Swapping to another provider means editing one
-`fetch` call in `app/api/registration/route.ts`. The form has a honeypot field for spam.
-
 ## Notes on the port
 
 - Palette and type come from the original Avada stylesheet: accent `#a0ce4e`, hover

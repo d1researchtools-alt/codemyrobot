@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation'
 import { ImageCarousel } from '@/components/ImageCarousel'
 import { PageBody } from '@/components/PageBody'
 import { PageShell } from '@/components/PageShell'
-import { RegistrationForm } from '@/components/RegistrationForm'
 import { getPage, listPublishedPages } from '@/lib/reader'
 
 type Props = { params: Promise<{ slug: string[] }> }
@@ -37,11 +36,6 @@ export default async function Page({ params }: Props) {
     <PageShell title={page.title} byline={page.byline}>
       <PageBody node={node} />
       <ImageCarousel items={page.carousel} />
-      {page.showRegistrationForm && (
-        <div className="mt-8">
-          <RegistrationForm />
-        </div>
-      )}
     </PageShell>
   )
 }
